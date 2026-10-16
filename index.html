@@ -185,13 +185,7 @@ section { padding-block: 56px 8px; scroll-margin-top: 16px; }
 .repo { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 0.9rem; text-decoration: none; }
 .repo:hover { text-decoration: underline; }
 .proj p + .repo { margin-top: auto; }
-.more {
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center;
-  border-style: dashed; box-shadow: none; background: transparent; color: var(--accent); font-weight: 600; text-decoration: none; min-height: 160px;
-  transition: border-color 0.18s ease, background-color 0.18s ease;
-}
-.more:hover { border-color: var(--accent); background: var(--accent-soft); }
-.more svg.i { width: 26px; height: 26px; }
+
 
 /* Footer */
 footer { margin-top: 64px; background: var(--hero); color: var(--hero-muted); }
@@ -308,7 +302,7 @@ footer a:hover { color: var(--hero-accent); }
     <div class="sh"><span class="ic"><svg class="i"><use href="#i-user"/></svg></span><h2>About</h2></div>
     <div class="about">
       <div class="about-text">
-        <p>I'm a Computer Engineering graduate from KFUPM focused on AI infrastructure. My foundation is in networking: during my internship in Aramco's IT Engineering Department, I worked on enterprise routers and switches, load balancer design and data center connectivity.</p>
+        <p>I'm a Computer Engineering graduate from KFUPM focused on AI infrastructure. My background spans networking, cloud, IoT and machine learning. During my internship in Aramco's IT Engineering Department, I worked on enterprise routers and switches, load balancer design and data center connectivity.</p>
         <p>During my studies, I also gained research experience at the SDAIA–KFUPM Joint Research Center on <em>Indoor Radar-Based Human Activity Recognition</em>, using CNNs, Transformers and explainable AI.</p>
         <p>After graduating, I joined Saudi Digital Academy's AI Data Center Operations program. There I deployed open-weight LLMs on a GPU Kubernetes cluster, monitored them with Prometheus and Grafana, and benchmarked their accuracy and latency.</p>
       </div>
@@ -376,11 +370,6 @@ footer a:hover { color: var(--hero-accent); }
         <p>Machine learning course project. Classifies 11 English vowel sounds from speech features, comparing KNN, SVMs and a deep neural network. The neural network reached 99% test accuracy, and tests on unseen speakers measured how well each model generalizes.</p>
         <a class="repo" href="https://github.com/Thamercoe/vowel-recognition-ml" target="_blank" rel="noopener">View repository<svg class="i"><use href="#i-out"/></svg></a>
       </article>
-
-      <a class="card more" href="https://github.com/Thamercoe" target="_blank" rel="noopener">
-        <svg class="i"><use href="#i-code"/></svg>
-        <span>See more of my work on GitHub</span>
-      </a>
     </div>
   </section>
 </main>
